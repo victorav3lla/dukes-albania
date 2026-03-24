@@ -1,13 +1,61 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dukes-albania</title>
+    <title>Duke's Albania — Luxury Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="bg-dark min-h-screen flex items-center justify-center overflow-hidden">
+
+    <!-- Radial background -->
+    <div class="fixed inset-0 bg-[radial-gradient(ellipse_at_center,_#1a1010_0%,_#0D0D0D_70%)] pointer-events-none"></div>
+
+    <main class="relative z-10 text-center px-8">
+
+      <!-- Top ornament -->
+      <div class="flex items-center justify-center gap-4 mb-10">
+        <div class="h-px w-16 bg-gold opacity-60"></div>
+        <div class="w-1.5 h-1.5 rounded-full bg-gold opacity-60"></div>
+        <div class="h-px w-16 bg-gold opacity-60"></div>
+      </div>
+
+      <!-- Eyebrow -->
+      <p class="font-body tracking-[0.35em] text-xs text-cream-muted uppercase mb-6">
+        Tirana &bull; Albania
+      </p>
+
+      <!-- Main title -->
+      <h1 class="font-heading text-cream leading-none">
+        <span class="block text-5xl sm:text-7xl md:text-8xl font-medium tracking-wide">Duke's</span>
+        <span class="block text-4xl sm:text-6xl md:text-7xl font-light italic tracking-widest mt-1 text-gold">Albania</span>
+      </h1>
+
+      <!-- Divider with star -->
+      <div class="flex items-center justify-center gap-3 my-10">
+        <div class="h-px w-10 bg-gold opacity-40"></div>
+        <svg class="w-4 h-4 text-gold opacity-70" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/>
+        </svg>
+        <div class="h-px w-10 bg-gold opacity-40"></div>
+      </div>
+
+      <!-- Coming soon -->
+      <p class="font-body font-light text-cream-muted tracking-[0.2em] text-sm uppercase">
+        Coming Soon
+      </p>
+
+      <!-- Bottom ornament -->
+      <div class="flex items-center justify-center gap-4 mt-10">
+        <div class="h-px w-16 bg-gold opacity-60"></div>
+        <div class="w-1.5 h-1.5 rounded-full bg-gold opacity-60"></div>
+        <div class="h-px w-16 bg-gold opacity-60"></div>
+      </div>
+
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
