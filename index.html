@@ -12,7 +12,7 @@
     rel="stylesheet">
 </head>
 
-<body class="bg-dark min-h-screen flex items-center justify-center overflow-hidden">
+<body class="bg-dark min-h-screen">
 
   <!-- #navbar (semi-transparent, on top, logo centered) -->
   <nav class="fixed top-0 left-0 w-full z-50 bg-black/30 opacity-90 backdrop-blur-sm">
@@ -71,9 +71,11 @@
     <div class="border-y border-white/20">
       <!-- nav links -->
       <ul class="flex items-center gap-4 justify-center py-2">
-        <li><a href="/" class="text-white text-sm font-bold tracking-[0.2em] hover:text-gray-300 transition">HOME</a></li>
+        <li><a href="/" class="text-white text-sm font-bold tracking-[0.2em] hover:text-gray-300 transition">HOME</a>
+        </li>
         <li class="text-white/40 text-xs">•</li>
-        <li><a href="/camere.html" class="text-white text-sm font-bold tracking-[0.2em] hover:text-gray-300 transition">CAMERE</a>
+        <li><a href="/camere.html"
+            class="text-white text-sm font-bold tracking-[0.2em] hover:text-gray-300 transition">CAMERE</a>
         </li>
         <li class="text-white/40 text-xs">•</li>
         <li><a href="/servizi.html"
@@ -88,6 +90,22 @@
   </nav>
 
   <!-- #hero section (full-screen video behind it) -->
+
+  <section class="relative h-screen">
+    <!-- video background -->
+    <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline>
+      <source src="/images/hero-video.mp4" type="video/mp4">
+    </video>
+
+    <!-- dark overlay -->
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <!-- content on top -->
+    <div class="absolute bottom-0 left-0 right-0 z-20 flex justify-center pb-44">
+      <a class="animate-border-blink bg-white/10 backdrop-blur-sm border-2 text-white px-10 py-4 text-xs tracking-[0.4em]
+                uppercase font-light hover:bg-white/20 transition-colors duration-300" href="/Booking">Controlla Disponibilità</a>
+    </div>
+  </section>
 
   <!-- #ratings banner -->
   <!-- #intro section -->
