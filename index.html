@@ -16,8 +16,8 @@
 <body class="bg-dark min-h-screen">
 
   <!-- #navbar (semi-transparent, on top, logo centered) -->
-  <nav class="fixed top-0 left-0 w-full z-50 bg-black/30 opacity-90 backdrop-blur-sm">
-    <div class="container mx-auto px-8 py-3 grid grid-cols-3 items-center">
+  <nav class="fixed top-0 left-0 w-full z-50 bg-black/30 opacity-90 backdrop-blur-sm transition-all duration-300" data-controller="navbar">
+    <div class="container mx-auto px-8 py-3 grid grid-cols-3 items-center" data-navbar-target="topbar">
 
       <!-- Left: language, phone, email -->
       <div class="flex items-center gap-4">
@@ -56,7 +56,7 @@
 
       <!-- Center: logo -->
       <div class="flex justify-center">
-        <img src="/images/Logo.png" alt="Duke's Hotel" class="h-22" />
+        <img src="/images/Logo.png" alt="Duke's Hotel" class="h-22 transition-all duration-300" data-navbar-target="logo"/>
       </div>
 
       <!-- Right: Book Now -->
@@ -69,7 +69,7 @@
     </div>
 
     <!-- thin white border -->
-    <div class="border-y border-white/20">
+    <div class="border-y border-white/20" data-navbar-target="navlinks">
       <!-- nav links -->
       <ul class="flex items-center gap-4 justify-center py-2">
         <li><a href="/" class="text-white text-sm font-bold tracking-[0.2em] hover:text-gray-300 transition">HOME</a>
