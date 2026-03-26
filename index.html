@@ -7,6 +7,7 @@
   <title>Duke's Hotel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://unpkg.com/lucide@latest"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
     rel="stylesheet">
@@ -176,6 +177,35 @@
     </div>
   </section>
   <!-- #services preview -->
+  <section>
+    <div class="bg-cream-soft py-30 px-8 flex flex-col items-center text-center">
+      <h2 class="text-black text-xs mb-4 uppercase">Il nostro hotel</h2>
+      <h2 class="text-black sm mb-4 uppercase ">Servizi & Comfort</h2>
+      <div class="container mx-auto px-8 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+
+        <div class="flex flex-col items-center gap-3">
+          <i data-lucide="waves" class="h-12 w-12 text-gold"></i>
+          <span class="text-sm text-stone-600">Piscina</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3">
+          <i data-lucide="flower-2" class="h-12 w-12 text-gold"></i>
+          <span class="text-sm text-stone-600">Spa & Benessere</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3">
+          <i data-lucide="utensils" class="h-12 w-12 text-gold"></i>
+          <span class="text-sm text-stone-600">Ristorante Gourmet</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-3">
+          <i data-lucide="dumbbell" class="h-12 w-12 text-gold"></i>
+          <span class="text-sm text-stone-600">Palestra Attrezzata</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
   <!-- #testimonials -->
   <!-- #local activities -->
   <!-- #footer -->
@@ -266,7 +296,7 @@
     </div>
   </footer>
 
-
+  <script>lucide.createIcons()</script>
   <script type="module" src="/src/main.js"></script>
 </body>
 
